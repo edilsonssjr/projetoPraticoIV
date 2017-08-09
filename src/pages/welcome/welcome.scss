@@ -1,0 +1,25 @@
+page-welcome {
+    #welcome{
+        background: color($colors, welcome);
+        text-align: center;
+
+        img{
+            margin-top: 50px;
+           
+        }
+        h1{
+            text-align: center;
+            font-size: 44px;
+            margin-top: 80px;
+            color: #d72b3b;
+        }
+        p{
+            color: #d72b3b;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 32px;
+            margin-bottom: 28px
+        }
+    }
+}

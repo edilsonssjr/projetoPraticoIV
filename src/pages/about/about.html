@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <img src="assets/img/logo-undb.png">
+    <ion-icon name="log-out" id="logout" (click)="logout()"></ion-icon>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1 *ngIf="xx">Ligue o gps e reinicie o app</h1>
+  <div #map id="map"></div>
+  <ion-fab ion-fab bottom left edge mini>
+    <button ion-fab (click)="addMarker()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
