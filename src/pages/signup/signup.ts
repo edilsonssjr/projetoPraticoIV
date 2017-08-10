@@ -26,8 +26,8 @@ export class SignupPage {
    this.storage.get('name');
    this.storage.set('name', {name:this.name,email:this.email,username:this.username,password:this.password});
    let alert = this.alertCtrl.create({
-      title: 'New Friend!',
-      subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!',
+      title: 'Sucesso!!',
+      subTitle: 'Seja bem vindo ao SIDINF-SLZ',
       buttons: ['OK']
     });
     alert.present();

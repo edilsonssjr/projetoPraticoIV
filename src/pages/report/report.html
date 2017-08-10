@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Report</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div #map id="map"></div>
+  <ion-card>
+
+
+    <ion-fab right top>
+      <button ion-fab>
+      <ion-icon name="pin" (tap)="getUserPosition()"></ion-icon>
+    </button>
+    </ion-fab>
+
+    <ion-item>
+      <ion-label floating>Título</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+     
+    <ion-item>
+      <ion-label floating>Mensagem</ion-label>
+      <ion-textarea type="text"></ion-textarea>
+    </ion-item>
+
+   
+    
+
+    <ion-item >
+      <ion-icon name="camera" item-left large (click)="takePicture()"></ion-icon>
+      <div class="img" *ngFor="let photo of photos">
+         <img [src]="photo" *ngIf="photo"> 
+      </div>
+    </ion-item>
+
+
+    <button ion-button full color="danger" (click)="setReport()">Enviar</button>
+
+  </ion-card>
+</ion-content>

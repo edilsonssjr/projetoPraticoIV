@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, App } from 'ionic-angular';
+import { ReportPage } from '../report/report';
 
 
 @Component({
@@ -16,6 +17,10 @@ export class HomePage {
     //Api token logout
     const root = this.app.getRootNav();
     root.popToRoot();
+  }
+
+  report(){
+    this.navCtrl.push(ReportPage);
   }
 
 
