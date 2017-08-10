@@ -2,6 +2,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController, App } from 'ionic-angular';
 import { Geolocation, GeolocationOptions, Geoposition, PositionError } from '@ionic-native/geolocation';
 import { AlertController } from 'ionic-angular';
+import { LoadingController } from 'ionic-angular';
 
 
 declare var google;
@@ -17,11 +18,15 @@ export class AboutPage {
   @ViewChild('map') mapElement: ElementRef;
   map: any;
 
-  constructor(public navCtrl: NavController, public app: App, private geolocation: Geolocation, public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public app: App, private geolocation: Geolocation, public alertCtrl: AlertController,public loadingCtrl: LoadingController) {
 
   }
 
   getUserPosition() {
+    let loader = this.loadingCtrl.create({
+      duration: 1500
+    });
+    loader.present();
     this.options = {
       enableHighAccuracy: false
     };
@@ -29,8 +34,6 @@ export class AboutPage {
 
       this.currentPos = pos;
 
-     
-     
       this.addMap(pos.coords.latitude, pos.coords.longitude);
 
   
@@ -70,7 +73,7 @@ export class AboutPage {
       position: this.map.getCenter()
     });
 
-    let content = "<p>This is your current position !</p>";
+    let content = "<p>Marcador!</p>";
     let infoWindow = new google.maps.InfoWindow({
       content: content
     });
