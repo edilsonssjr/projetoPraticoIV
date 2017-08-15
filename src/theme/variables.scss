@@ -34,13 +34,13 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #d62c3e,
+  primary:    #0b671a,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #F5F5F6,
   dark:       #222,
   welcome:    #F5F5F6,
-  undb:       #d62c3e,
+  undb:       #0b671a,
   login:      #488aff
 );
 
@@ -55,10 +55,28 @@ $toolbar-background: color($colors,undb);
     }
 
     ion-navbar{
-        img{
-            width: 35%;
-            background: #fff;
+
+        .toolbar-content{
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
         }
+        
+        p{
+            display: inline-block;
+            text-align: center;
+            width: 80%;
+            font-size: 2rem;
+            color: #fff;
+            margin: 0
+        }
+        img{
+            width: 10%;
+        }
+      
     }
 
     ion-content{
@@ -67,6 +85,26 @@ $toolbar-background: color($colors,undb);
         }
     }
 
+    #btn{
+         position: absolute;
+        z-index: 999999;
+        bottom: 0;
+        margin-bottom: 10%;
+        width: -9%;
+        background: #0b671a;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        left: 41%;
+        ion-icon{
+            font-size:3.4rem;
+            color: #fff
+        }
+    }
+
+    .button-md{
+        height: 4.6rem !important;
+    }
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
