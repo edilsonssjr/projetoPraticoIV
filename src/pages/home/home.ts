@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, App } from 'ionic-angular';
 import { ReportPage } from '../report/report';
+import { ListPage } from '../list/list';
+
 
 
 @Component({
@@ -23,5 +25,8 @@ export class HomePage {
     this.navCtrl.push(ReportPage);
   }
 
+  view(){
+    this.navCtrl.push(ListPage);
+  }
 
 }

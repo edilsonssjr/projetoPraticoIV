@@ -34,13 +34,13 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #0b671a,
+  primary:    #054d12,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #F5F5F6,
   dark:       #222,
   welcome:    #F5F5F6,
-  undb:       #0b671a,
+  undb:       #054d12,
   login:      #488aff
 );
 
@@ -53,6 +53,8 @@ $toolbar-background: color($colors,undb);
         margin-right: 10px;
         margin-top: 5px
     }
+    
+
 
     ion-navbar{
 

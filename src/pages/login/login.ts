@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
+import { AlertController } from 'ionic-angular';
 
 
 
@@ -11,7 +12,7 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -21,6 +22,11 @@ export class LoginPage {
   login(){
     //Api conecction
     this.navCtrl.push(TabsPage);
+    let alert = this.alertCtrl.create({
+      subTitle: 'Seja bem vindo ao RADAR DA CIDADE',
+      buttons: ['OK']
+    });
+     alert.present();
   }
 
 }

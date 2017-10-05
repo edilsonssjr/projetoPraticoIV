@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
@@ -27,7 +27,7 @@ export class SignupPage {
    this.storage.set('name', {name:this.name,email:this.email,username:this.username,password:this.password});
    let alert = this.alertCtrl.create({
       title: 'Sucesso!!',
-      subTitle: 'Seja bem vindo ao SIDINF-SLZ',
+      subTitle: 'Seja bem vindo ao RADAR DA CIDADE',
       buttons: ['OK']
     });
     alert.present();

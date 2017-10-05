@@ -63,6 +63,9 @@ export class AboutPage {
     this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
     this.addMarker();
 
+     this.addMarker();
+    
+
   }
 
   addMarker() {
@@ -81,6 +84,7 @@ export class AboutPage {
     google.maps.event.addListener(marker, 'click', () => {
       infoWindow.open(this.map, marker);
     });
+
 
   }
 

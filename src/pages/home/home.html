@@ -6,8 +6,8 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Seja bem-vindo ao Radar da Cidade</h2>
+<ion-content padding id="home">
+  <h2 class="center">Seja bem-vindo ao Radar da Cidade</h2>
   <p>
     Viu um problema de infraestrutura em São Luis??
   </p>
@@ -23,43 +23,81 @@
       <h2>Trânsito</h2>
     </ion-card-content>
 
-    <button ion-button full color="danger" (click)="report()">Reportar</button>
+    <ion-row>
+      <ion-col>
+        <button ion-button full color="danger" (click)="report()">Reportar</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button full color="login" (click)="view()">Ver <ion-icon name="search"></ion-icon></button>
+      </ion-col>
+
+    </ion-row>
+
+
 
   </ion-card>
 
-  <ion-card>
+   <ion-card>
 
-    <img src="assets/img/transito.jpg">
+    <img src="https://www.tratamentodeagua.com.br/wp-content/uploads/2016/09/58.jpeg">
 
     <ion-card-content>
-      <h2>Trânsito</h2>
+      <h2>Águe e Esgotos</h2>
     </ion-card-content>
 
-    <button ion-button full color="danger" (click)="report()">Reportar</button>
+    <ion-row>
+      <ion-col>
+        <button ion-button full color="danger" (click)="report()">Reportar</button>
+      </ion-col>
+      <ion-col>
+         <button ion-button full color="login" (click)="view()">Ver <ion-icon name="search"></ion-icon></button>
+      </ion-col>
+
+    </ion-row>
+
+
 
   </ion-card>
+    <ion-card>
 
-  <ion-card>
-
-    <img src="assets/img/transito.jpg">
+    <img src="https://unieducar.org.br/sites/default/files/imagecache/product/cursos/imagens/acessibilidade_e_mobilidade_urbana_gratuito.jpg">
 
     <ion-card-content>
-      <h2>Trânsito</h2>
+      <h2>Mobilidade Urbana</h2>
     </ion-card-content>
 
-    <button ion-button full color="danger" (click)="report()">Reportar</button>
+    <ion-row>
+      <ion-col>
+        <button ion-button full color="danger" (click)="report()">Reportar</button>
+      </ion-col>
+      <ion-col>
+         <button ion-button full color="login" (click)="view()">Ver <ion-icon name="search"></ion-icon></button>
+      </ion-col>
+
+    </ion-row>
+
+
 
   </ion-card>
+    <ion-card>
 
-  <ion-card>
-
-    <img src="assets/img/transito.jpg">
+    <img src="https://3.bp.blogspot.com/-PJti-ck7bb8/TxYfiHAap7I/AAAAAAAAAgg/8BAJmOLWzWo/s1600/Outros-temas_655pxl.jpg">
 
     <ion-card-content>
-      <h2>Trânsito</h2>
+      <h2>Outros</h2>
     </ion-card-content>
 
-    <button ion-button full color="danger" (click)="report()">Reportar</button>
+    <ion-row>
+      <ion-col>
+        <button ion-button full color="danger" (click)="report()">Reportar</button>
+      </ion-col>
+      <ion-col>
+         <button ion-button full color="login" (click)="view()">Ver <ion-icon name="search"></ion-icon></button>
+      </ion-col>
+
+    </ion-row>
+
+
 
   </ion-card>
 
